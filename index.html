@@ -1,0 +1,138 @@
+<html>
+    <head>
+        
+         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+         <link rel="stylesheet" href="assets/css/styles.css">
+         <title>Life Long Auto Parts</title>
+         <script lang="javascript">
+           
+            function testcaps()
+            {
+                localStorage.setItem("firstname", "caps");
+                window.location = 'cart.html';
+                
+            }
+            function testcarpet()
+            {
+                localStorage.setItem("secondname", "carpet");
+                window.location = 'carpet.html'
+            }
+            function testheadlights()
+            {
+                window.location = 'headlights.html'
+            }
+            function testSuspension()
+            {
+                window.location = 'suspension.html'
+            }
+            function testOem()
+            {
+                window.location = 'oem.html'
+            }
+         </script>
+        <body>
+             <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class='bx bxs-autoparts nav__logo-icon'></i> Toyota Auto Parts
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                 
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                     
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Products
+                </h2>
+
+                <div class="products__container grid" id="caps" value="caps">
+                    <article class="products__card">
+                        <img src="assets/img/product1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title" >Hub Caps</h3>
+                        <span class="products__price">$1500</span>
+
+                         <button id="caps" class="products__button" onclick="testcaps()">
+                            <i class='bx bx-shopping-bag'> add to cart</i>
+                        </button>
+                    </article>
+
+                    <article class="products__card" id="carpet" value="carpet">
+                        <img src="assets/img/product2.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title" >Pickup Truck Carpet</h3>
+                        <span class="products__price">$1350</span>
+
+                        <button id="carpet" class="products__button" onclick="testcarpet()">
+                            <i class='bx bx-shopping-bag'>add to cart</i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product3.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title" id="headlights">Projector Headlights</h3>
+                        <span class="products__price">$870</span>
+
+                        <button class="products__button" onclick="testheadlights()">
+                            <i class='bx bx-shopping-bag'>add to cart</i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product4.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title" id="suspension">Suspension struts</h3>
+                        <span class="products__price">$650</span>
+
+                        <button class="products__button" onclick="testSuspension()">
+                            <i class='bx bx-shopping-bag'>add to cart</i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product5.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title" id="OEM">OEM Auto parts</h3>
+                        <span class="products__price">$950</span>
+
+                        <button class="products__button" onclick="testOem()">
+                            <i class='bx bx-shopping-bag'>add to cart</i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+
+        </main>
+        </body>
+        
+    </head>
+</html>
